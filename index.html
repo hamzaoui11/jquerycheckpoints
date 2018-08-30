@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquerycheckpoints</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body onload="startTime()">
+        <div id="times"></div>
+        
+    
+<select id="st" class="dropdown">
+        <option >Arial</option>
+        <option >Impact</option>
+        <option >Verdana</option>
+        <option >Times New Roman</option>
+</select>
+<select id="sr" class="dropdown" >
+        <option >10</option>
+        <option >30</option>
+        <option>60</option>
+        <option>90</option>
+</select>      
+<input type="button" value="G"  class="button1"/>
+<input type="button" value="I"  class="button2"/>
+<input type="button" value="U" class="button3"/>
+        <h1> <center>HERE IS THE  </center></h1>
+        <h2><center>TITLE</center></h2>
+<center><textarea id="txt"></textarea></center>
+<script>
+
+        function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("times").innerHTML = h + ":" + m + ":" + s;
+        var t = setTimeout(function(){ startTime() }, 500);
+    }
+    
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+    </script>
+
+</body>
+</body>
+</html>

@@ -1,0 +1,77 @@
+#txt{
+    height: 300px;
+	width: 80%;
+	border-bottom-color: #A4A4A4;
+	border-left-color: #A9E2F3;
+	border-right-color: transparent;
+	border-top-color: transparent;
+	outline:none;
+	font-family: sans-serif;
+	border-width: 16px;
+    opacity: 0.4
+}
+.bold{
+	font-weight: bold;
+}
+.italic{
+	font-style:italic;
+}
+.underlined{
+	text-decoration:underline;
+}
+
+.button1,.button2,.button3{
+	color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.button1,.button2,.button3:hover{
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.dropdown {
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 5px 8px 16px 2px rgba(0,0,0,0.2);
+    z-index: 5;
+    background-color: #E0F2F7;
+    font-size:2em;
+    border-radius: 50px 20px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+body{
+    background-image: url(http://wall2born.com/data/out/667/image-45564339-black-and-blue-hd-wallpaper.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/originals/4b/59/f9/4b59f92f6a024c108a1e985646af15e9.gif);
+
+}
+h1{
+	font-size: 60px;
+	font-weight: 700px;
+	letter-spacing: 8px;
+	margin-bottom: 20px;
+	color: white ;
+	text-shadow:5px 5px #013ADF
+
+}
+h2{
+	font-size: 30px;
+	color: white ;
+	text-shadow:5px 5px #013ADF
+
+}
+#times{
+	font-size: 3em;
+	color: white
+}
